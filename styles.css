@@ -1,0 +1,226 @@
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #4A2C2A;
+        background-color: #F8F1E7;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        font-family: 'Lora', serif;
+        color: #3E2723;
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    /* Header Section */
+    
+    header {
+        background-image: url('https://static.vecteezy.com/system/resources/previews/024/669/924/non_2x/coffee-beans-with-water-splash-background-generative-ai-free-photo.jpeg');
+        background-size: cover;
+        background-position: center;
+        color: #FFF;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo img {
+        height: 100px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    
+    nav ul li a {
+        color: #4b4444;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+        color: #ac5a43;
+    }
+    
+    .hero {
+        margin-top: 50px;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        color: #f8f6f6;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        color: #f8f6f6;
+    }
+    
+    .btn {
+        background-color: #D4A55E;
+        color: #FFF;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+    
+    .btn:hover {
+        background-color: #B8863B;
+    }
+    /* Menu Section */
+    
+    .menu-section {
+        padding: 40px 20px;
+        background-color: #FFF;
+    }
+    
+    .menu-section h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .menu-card {
+        background-color: #F8F1E7;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .menu-card:hover {
+        transform: translateY(-10px);
+    }
+    
+    .menu-card img {
+        width: 20%;
+        height: 50px;
+        object-fit: contain;
+    }
+    
+    .menu-card h3 {
+        margin: 15px 10px 10px;
+        font-size: 1.5rem;
+        color: #3E2723;
+    }
+    
+    .menu-card p {
+        margin: 0 10px 10px;
+        font-size: 0.9rem;
+        color: #4A2C2A;
+    }
+    
+    .menu-card .price {
+        font-weight: bold;
+        color: #D4A55E;
+    }
+    /* About Us Section */
+    
+    .about-section {
+        padding: 40px 20px;
+        background-color: #F8F1E7;
+        text-align: center;
+    }
+    
+    .about-section p {
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.6;
+        color: #4A2C2A;
+    }
+    /* Contact Section */
+    
+    .contact-section {
+        padding: 40px 20px;
+        background-color: #FFF;
+    }
+    
+    .contact-section h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    form label {
+        font-weight: bold;
+        color: #3E2723;
+    }
+    
+    form input,
+    form textarea {
+        padding: 10px;
+        border: 1px solid #CCC;
+        border-radius: 5px;
+        background-color: #F8F1E7;
+    }
+    
+    form button {
+        background-color: #D4A55E;
+        color: #FFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    form button:hover {
+        background-color: #B8863B;
+    }
+    /* Footer Section */
+    
+    footer {
+        background-color: #3E2723;
+        color: #FFF;
+        text-align: center;
+        padding: 20px;
+    }
+    /* Responsive Design */
+    
+    @media (max-width: 768px) {
+        .header-content {
+            flex-direction: column;
+            align-items: center;
+        }
+        nav ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .hero h1 {
+            font-size: 2rem;
+        }
+        .hero p {
+            font-size: 1rem;
+        }
+        .menu-grid {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+    }
